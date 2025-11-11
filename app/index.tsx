@@ -9,12 +9,27 @@ export default function Index() {
 
 
   return (
-    <View style={styles.homeView}>
-      <Text style={styles.homepage}>Homepage</Text>
-      <Text>Count: {count}</Text>
-      <TouchableOpacity  onPress={onPress} style={styles.imagebutton} >
-          <Image source={require('../assets/images/lolggg.png')} style= {styles.imagebutton} />
-          </TouchableOpacity>
+    <View style={styles.mainView}>
+     
+      <View style= {styles.subView1}>
+      
+        <Image source={require('../assets/images/logo.png')} style= {styles.logo} />
+      </View>
+    
+    <View style={styles.subView2}>
+      <Text style={styles.homepage}>Press the CD! </Text>
+    </View>
+
+      <View style= {styles.subView3}>
+      
+        <Text style={styles.homepage}>Count: {count}</Text>
+        
+        <TouchableOpacity  onPress={onPress} style={styles.imagebutton} >
+            <Image source={require('../assets/images/lolggg.png')} style= {styles.imagebutton} />
+            </TouchableOpacity>
+          </View>
+
+
     </View>
   );
 }
